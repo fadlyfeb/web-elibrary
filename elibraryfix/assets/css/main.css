@@ -1,0 +1,17 @@
+.add-data{
+    margin-right: 12px;
+}
+
+.badge{
+    color: black;
+}
+
+.badge:hover{
+    color: white;
+    border-color: white;
+}
+
+select.status{
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+}

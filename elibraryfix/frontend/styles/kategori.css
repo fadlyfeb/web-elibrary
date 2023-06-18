@@ -1,0 +1,222 @@
+body {
+  background-color: #fff;
+  font-family: 'Assistant', sans-serif;
+}
+header {
+  margin-top: -50px;
+  padding: 180px 0 250px;
+  background-image: url("../../Gambar/book4.jpg");
+  background-size: cover;
+  height: 350px;
+}
+.books{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #071C4D;
+}
+h2{
+  font-family: 'Playfair Display', serif;
+}
+header h1{
+  margin-top: -80px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.box-search{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  padding-top: 65px;
+}
+.search{
+  height: 50px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.search-input{
+  color: white;
+  border:0;
+  outline: 0;
+  background: none;
+  width: 0;
+  margin-top:5px;
+  caret-color:transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+
+}
+
+.search .search-input{
+  padding-left: 10px;
+  width: 550px;
+  caret-color: #536bf6;
+  font-size: 21px;
+  font-weight: 300;
+  color: black;
+  transition: width 0.4s linear;
+}
+
+.search:hover>.search-icon{
+  background:#1A237E;
+  color:#fff;
+}
+.search-icon{
+  border-radius: 3px;
+  height: 50px;
+  width: 50px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #536bf6;
+
+}
+a:link{
+  text-decoration: none;
+}
+
+.box{
+  margin-bottom: 170px;
+}
+.box h1{
+  font-weight: bold;
+}
+
+.card{
+  text-align: center;
+  margin-bottom: 20px;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+.card-body{
+  padding: 0%;
+  color: #071C4D;
+}
+
+#terbaru img {
+  margin-top: 10px;
+  max-height: 300px;
+  max-width: 240px;
+  min-width: 130px;
+  padding: 10px;
+}
+
+.box-card {
+  background-color: transparent;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  max-height: 300px;
+  max-width: 240px;
+  min-width: 130px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.box-card * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.box-card h3 {
+  background-color: #1A237E;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.box-card:before,
+.box-card:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: transparent;
+  content: '';
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.box-card:before {
+  -webkit-transform: skew(45deg) translateX(-155%);
+  transform: skew(45deg) translateX(-155%);
+}
+
+.box-card:after {
+  -webkit-transform: skew(45deg) translateX(155%);
+  transform: skew(45deg) translateX(155%);
+}
+
+.box-card img {
+  backface-visibility: hidden;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.box-card figcaption {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+
+
+}
+
+.box-card a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.box-card:hover > img,
+.box-card.hover > img {
+  opacity: 0.5;
+}
+
+.box-card:hover:before,
+.box-card.hover:before {
+  -webkit-transform: skew(45deg) translateX(-55%);
+  transform: skew(45deg) translateX(-55%);
+}
+
+.box-card:hover:after,
+.box-card.hover:after {
+  -webkit-transform: skew(45deg) translateX(55%);
+  transform: skew(45deg) translateX(55%);
+}
+
+.box-card:hover figcaption,
+.box-card.hover figcaption {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+
+
+
